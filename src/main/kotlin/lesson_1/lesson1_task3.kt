@@ -7,8 +7,8 @@ fun main() {
     var minute: Int = 7
 
     println("Год полета: $year\n" +
-            "Час полета: $hour\n" +
-            "Минута полета: $minute\n")
+            "Час полета: ${"%02d".format(hour)}\n" +
+            "Минута полета: ${"%02d".format(minute)}\n")
 
     hour = 10
     minute = 55
