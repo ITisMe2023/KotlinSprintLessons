@@ -1,6 +1,10 @@
 package org.example.lesson_1
 
 fun main() {
-    val seconds = 6480
-    println("${"%02d".format(seconds / 3600)}:${"%02d".format((seconds % 3600) / 60)}:${"%02d".format((seconds % 3600) % 60)}")
+    val flySeconds = 6480
+    val hours = flySeconds / 3600
+    val minutes = (flySeconds % 3600) / 60
+    val seconds = (flySeconds % 3600) % 60
+
+    println("%02d:%02d:%02d".format(hours, minutes, seconds))
 }
