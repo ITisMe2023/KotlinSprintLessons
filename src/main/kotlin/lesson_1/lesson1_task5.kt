@@ -7,4 +7,5 @@ fun main() {
     val seconds = (flySeconds % 3600) % 60
 
     println("%02d:%02d:%02d".format(hours, minutes, seconds))
+
 }
